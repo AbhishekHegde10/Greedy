@@ -1,0 +1,17 @@
+class Solution{
+public:
+    int toyCount(int N, int K, vector<int> arr)
+    {
+        sort(arr.begin(),arr.end());
+        int s=0, ans=0;
+        for(int i=0;i<N;i++)
+        {
+            ans=ans+arr[i];
+            if (ans>K)
+            {
+             return i;    
+            }
+        }
+        
+    }
+};
